@@ -11,6 +11,11 @@
     width: 100%;
     max-width: 1350px;
     margin: 0 auto;
+    padding: 0 56px;
+}
+
+li {
+    list-style: none;
 }
 
 .container {
@@ -102,7 +107,7 @@ nav {
 /* Landing */
 
 #landing {
-    height: 80vh;
+    height: 70vh;
 }
 
 .landing__information {
@@ -186,5 +191,269 @@ nav {
 
 .landing__img {
     width: 100%;
+}
 
+/* FEATURES */
+
+.features__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.features__header--small {
+    font-size: 18px;
+}
+
+.features__header--big {
+    margin: 48px 0;
+    font-size: 56px;
+}
+
+.features__header--para {
+    color: rgb(124 139 161);
+    text-align: center;
+    max-width: 550px;
+    font-size: 18px;
+}
+
+.feature__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 64px;
+}
+
+.feature {
+    display: flex;
+    width: calc(100% / 3);
+    padding: 24px 8px;
+    margin: 16px 0;
+}
+
+.feature__img--wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.feature__img {
+    border: 2px solid lightgray;
+    padding: 20px;
+    border-radius: 50%;
+}
+
+.feature__description {
+    padding-left: 16px;
+}
+
+.feature__description--header {
+    margin-bottom: 24px;
+}
+
+.feature__description--para {
+    line-height: 2;
+    color:rgb(124, 139, 161);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Quality section */
+
+.quality__row {
+    margin-top: 72px;
+    display: flex;
+}
+
+.quality__img--container {
+    border: 1px solid rgba(160, 174, 192, 0.5);
+    
+    width: 50%;
+}
+
+.quality__img {
+    width: 100%;
+}
+
+.quality__description {
+    width: 50%;
+}
+
+.quality__description--header-small {
+    font-size: 18px;
+}
+
+.quality__description--header-big {
+    margin: 16px 0;
+    font-size: 52px;
+}
+
+.quality__description--para {
+    color: rgb(124, 139, 161);
+    margin-bottom: 16px;
+    font-size: 20px;
+}
+
+.quality__description--button {
+    width: 140px;
+    border: none;
+    border-radius: 20px;
+    background-color: rgba(100 21 255);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 4px;
+    padding: 12px;
+}
+
+.quality__description {
+    padding-right: 48px;
+}
+
+
+/* STEPS */
+
+.steps__row {
+    margin-top: 72px;
+    display: flex;
+}
+
+.steps__img--container {
+    width: 50%;
+}
+
+.steps__img {
+    width: 100%;
+}
+
+.steps__description {
+    width: 50%;
+    margin-left: 64px;
+}
+
+.steps__description--header-small {
+    font-size: 18px;
+}
+
+.steps__description--header-big {
+    margin: 16px 0;
+    font-size: 52px;
+}
+
+.steps__description {
+    padding-right: 48px;
+}
+
+.steps__list--item {
+    display: flex;
+    margin-top: 32px;
+}
+
+.list__item--number {
+    font-size: 36px;
+    color:rgba(160, 174, 192, 0.8);
+}
+
+.list__item--description {
+    margin-left: 24px;
+    width: 320px;
+}
+
+.list__item--description-title {
+    font-size: 20px;
+}
+
+.list__item--description-subtitle {
+    font-size: 14px;
+    margin-top: 12px;
+    color: #718096;
+}
+
+/* VALUES */
+
+.values__row {
+    margin-top: 128px;
+    display: flex;
+}
+
+.values__img--wrapper {
+    width: 50%;
+}
+
+.values__img {
+    width: 100%;
+}
+
+.values__info {
+    width: 50%;
+    padding-right: 48px;
+}
+
+.values__header--small {
+    color: #6415ff;
+    font-size: 16px;
+}
+
+.values__header--big {
+    font-size: 54px;
+    font-weight: 900;
+    color: #243e63;
+    margin-top: 16px;
+}
+
+.values__para {
+    color: #7c8ba1;
+    font-size: 18px;
+    margin-top: 32px;
+}
+
+.values__benefits {
+    display: flex;
+    margin-top: 32px;
+}
+
+.benefit__title {
+    display: flex;
+    align-items: center;
+    color: #243e63;
+    margin-left: 12px;
+    font-size: 20px;
+}
+
+.title__image--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 36px;
+    width: 36px;
+    background-color: #9ae6b4;
+    border-radius: 50%;
+}
+
+.green-background {
+    background-color: #9ae6b4;
+}
+
+.red-background {
+    background-color: #feb2b2;
+}
+
+.values__benefit--title {
+    display: flex;
+}
+
+.values__benefit--description {
+    font-size: 16px;
+    margin-top: 16px;
+    color: #718096;
+}
+
+.values__button {
+    padding: 12px 32px;
+    background-color: #6415ff;
+    color: #f7fafc;
+    border-radius: 9999px;
+    border: none;
 }
