@@ -456,4 +456,7 @@ nav {
     color: #f7fafc;
     border-radius: 9999px;
     border: none;
+    margin-top: 48px;
+    font-weight: 900;
+    font-size: 14px;
 }
