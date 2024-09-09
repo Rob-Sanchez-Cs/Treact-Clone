@@ -460,3 +460,66 @@ nav {
     font-weight: 900;
     font-size: 14px;
 }
+
+/* PRICING */
+
+.pricing__header--container {
+    margin-top: 40px;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing__header--small {
+    font-size: 16px;
+}
+
+.pricing__header--big {
+    font-size: 48px;
+    color: #243e63;
+}
+
+.pricing__para {
+    font-size: 18px;
+    color: #7c8ba1;
+    margin-top: 16px;
+}
+
+.pricing__plans--container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing__plans--container {
+    display: flex;
+}
+
+.pricing__plan {
+    display: flex;
+    flex-direction: column;
+    margin: 64px 32px 0 0;
+    padding: 8px 32px 0 32px;
+    width: calc(100% / 3);
+
+}
+
+.pricing__plan--header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing__plan--description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.plan__button--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
