@@ -1237,7 +1237,9 @@ footer {
     .testimonials__description--para,
     .testimonial__title,
     .testimonial__description,
-    .final__row--header {
+    .final__row--header,
+    .landing__information--header,
+    .pricing__header--big {
         text-align: center;
     }
 
