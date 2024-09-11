@@ -9,7 +9,7 @@
 
 .row {
     width: 100%;
-    max-width: 1350px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 56px;
 }
@@ -25,6 +25,7 @@ li {
 a {
     text-decoration: none;
     transition: all 300ms ease;
+    cursor: pointer;
 }
 
 a:hover {
@@ -78,7 +79,7 @@ nav {
 .nav__links {
     display: flex;
     align-items: center;
-    width: 50%;
+    width: 55%;
     justify-content: space-around;
     font-weight: 700;
 }
@@ -463,6 +464,11 @@ nav {
 
 /* PRICING */
 
+#pricing {
+    margin-top: 80px;
+    margin-bottom: 0;
+}
+
 .pricing__header--container {
     margin-top: 40px;
     display: flex; 
@@ -473,6 +479,7 @@ nav {
 
 .pricing__header--small {
     font-size: 16px;
+    margin-bottom: 16px;
 }
 
 .pricing__header--big {
@@ -484,6 +491,8 @@ nav {
     font-size: 18px;
     color: #7c8ba1;
     margin-top: 16px;
+    text-align: center;
+    max-width: 600px;
 }
 
 .pricing__plans--container {
@@ -498,10 +507,28 @@ nav {
 .pricing__plan {
     display: flex;
     flex-direction: column;
-    margin: 64px 32px 0 0;
-    padding: 8px 32px 0 32px;
+    margin: 64px 32px 0 32px;
     width: calc(100% / 3);
+    border-radius: 8px;
+    position: relative;
+}
 
+.green-stripe {
+    position: absolute;
+    height: 8px;
+    background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.red-stripe {
+    position: absolute;
+    height: 8px;
+    background-image: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .pricing__plan--header {
@@ -509,6 +536,12 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 32px 0;
+    border: 2px solid rgb(226, 232, 240);
+    border-bottom-width: 0;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    width: 100%;
 }
 
 .pricing__plan--description {
@@ -519,6 +552,353 @@ nav {
 }
 
 .plan__button--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.plan__header--title {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(26, 32, 44);
+}
+
+.plan__header--price {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.plan__header--subtitle {
+    color: rgb(160, 174, 192);
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    font-size: 18px;
+}
+
+.plan__description--title {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.pricing__plan--description {
+    padding: 32px;
+    border: 2px solid rgb(226, 232, 240);
+}
+
+.plan__description--info {
+    color: rgb(113, 128, 150);
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.plan__button--container {
+    padding: 32px;
+    border: 2px solid rgb(226, 232, 240);
+    border-top-width: 0px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.plan__button {
+    padding: 16px 32px;
+    border: none;
+    border-radius: 9999px;
+    
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(247, 250, 252);
+    width: 70%;
+}
+
+.background__business {
+    background-image: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.button__personal {
+    background-image: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.button__business {
+    background-color: white;
+    color: rgb(100, 21, 255);
+}
+
+.button__enterprise {
+    background-image: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+.white {
+    color: rgb(247, 250, 252);
+}
+
+.business__box {
+    border: none;
+}
+
+.business__box-lines {
+    border-top: 2px solid rgb(102, 126, 234);
+    border-bottom: 2px solid rgb(102, 126, 234);
+}
+
+/* TESTIMONIALS */
+
+.testimonials__row {
+    display: flex;
+}
+
+.testimonials__image--wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.testimonials__img {
+    width: 100%;
+}
+
+.testimonials__description {
+    width: 50%;
+    padding-left: 64px;
+}
+
+.testimonials__description--header-small {
+    color: rgb(100, 21, 255);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.testimonials__description--header-big {
+    color: rgb(36, 62, 99);
+    font-size: 48px;
+    margin-top: 16px;
+    font-weight: 900;
+}
+
+.testimonials__description--para {
+    font-size: 18px;
+    color: rgb(124, 139, 161);
+    font-weight: 500;
+    margin-top: 24px;
+}
+
+.testimonial {
+    margin-top: 40px;
+}
+
+.fa-star {
+    margin-right: 4px;
+}
+
+.testimonial__title {
+    margin-top: 16px;
+    color: rgb(36, 62, 99);
+    font-size: 20px;
+}
+
+.testimonial__description {
+    margin: 16px 0 40px 0;
+    color: rgb(74, 85, 104);
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.reporter__img--wrapper {
+    height: 80px;
+    width: 80px;
+}
+
+.reporter__img {
+    width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__reporter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tesimonial__reporter--info {
+    display: flex;
+}
+
+.reporter__info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 24px;
+    justify-content: center;
+}
+
+.reporter__info--name {
+    font-size: 20px;
+    color: rgb(36, 62, 99);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.reporter__info--company {
+    color: rgb(124, 139, 161);
+    font-weight: 500;
+}
+
+.divider {
+    border-right: 1px solid rgb(226, 232, 240);
+    height: 24px;
+}
+
+.testimonial__buttons {
+    display: flex;
+    width: 145px;
+    height: 48px;
+    align-items: center;
+}
+
+.testimonial__button {
+    padding: 16px;
+    height: 100%;
+    width: 100%;
+    margin: 0 12px;
+    border: none;
+    border-radius: 50%;
+}
+
+/* Box above footer */
+
+.final__row {
+    background-color: #6415ff;
+    height: 282px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 64px;
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+.final__row--header {
+    color: rgb(226, 232, 240);
+    font-size: 30px;
+    font-weight: 700;
+    width: 45%;
+}
+
+.final__row--button-wrapper {
+    display: flex;
+    width: 45%;
+    justify-content: center;
+}
+
+.final__row--button {
+    margin-right: 32px;
+    padding: 20px 40px;
+    color: rgb(247, 250, 252);
+    border-radius: 9999px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.orange-button {
+    background-color: rgb(245, 101, 101);
+    border: none;
+}
+
+.purple-button {
+    background-color: #6415ff;
+    border: 1px solid rgb(160, 174, 192);
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(100, 21, 255);
+}
+
+.footer__row {
+    padding-top: 64px;
+}
+
+.footer__info--wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__info {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.footer__info--header {
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(247, 250, 252);
+    margin-bottom: 16px;
+}
+
+.footer__info--link {
+    font-size: 14px;
+    color: rgb(247, 250, 252);
+    font-weight: 500;
+    margin-top: 12px;
+}
+
+.footer__info--link:hover {
+    color: rgb(247, 250, 252);
+}
+
+.horizontal-line {
+    width: 100%;
+    border-top: 2px solid rgb(116, 44, 255);
+    margin: 64px 0;
+}
+
+.copyright {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.copyright__logo--wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.copyright__logo {
+    width: 32px;
+    height: 32px;
+}
+
+.copyright__header {
+    margin-left: 12px;
+    color: rgb(226, 232, 240);
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.copyright__description {
+    color: rgb(203, 213, 224);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer__socials {
+    display: flex;
+    width: 128px;
+    justify-content: space-between;
+}
+
+.footer__social {
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+    background-color: rgb(247, 250, 252);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
