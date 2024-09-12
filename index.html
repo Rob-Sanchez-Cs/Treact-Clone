@@ -6,8 +6,28 @@
     <title>Treact Clone</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/36d09148ab.js" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
 </head>
 <body>
+
+    <div class="burger__row">
+        <div class="burger__menu">
+            <ul class="burger__list">
+                <li><a class="burger__list--item" href="">About</a></li>
+                <li><a class="burger__list--item" href="">Blog</a></li>
+                <li><a class="burger__list--item" href="">Pricing</a></li>
+                <li><a class="burger__list--item" href="">Contact Us</a></li>
+                <li><a class="burger__list--item" href="">Login</a></li>
+                <li><a class="burger__list--item last__burger--item" href="">Sign Up</a></li>
+            </ul>
+            <button class="burger__button" onclick="closeMenu()">
+                <i class="fa-solid fa-x fa-2x"></i>
+            </button>
+        </div>
+    </div>
+    
+
+    </div>
     <nav class="row">
         <div class="nav__logo">
             <figure class="nav__logo--img-wrapper">
@@ -23,7 +43,7 @@
             <a class="nav__link" href="">Log in</a>
             <a class="nav__link sign-up__button" href="">Sign up</a>
         </div>
-        <button class="nav__button--wrapper">
+        <button class="nav__button--wrapper" onclick="openMenu()">
             <svg xmlns="http://www.w3.org/2000/svg" class="nav__button" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
         </button>
     </nav>
