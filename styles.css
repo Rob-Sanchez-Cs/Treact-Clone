@@ -106,10 +106,10 @@ p {
   position: fixed;
   border: none;
   background-color: white;
-  margin-left: 900px;
-  margin-bottom: 300px;
   transition: color 300ms ease;
   visibility: inherit;
+  margin-left: 85%;
+  margin-top: -250px;
 }
 
 .fa-x {
